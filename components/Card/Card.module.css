@@ -1,0 +1,70 @@
+.container {
+  width: 350px;
+  min-height: 402px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 16px;
+}
+
+.img {
+  max-width: 300px;
+  max-height: 192px;
+}
+
+.imageContainer {
+  max-width: 330px;
+  max-height: 200px;
+  background-color: #e5f4ff;
+  padding: 4px 15px 3.826px 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  color: var(--c-black, #2c2c2c);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tagTime {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tagContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tagName {
+  display: flex;
+  align-items: center;
+}
+
+.footerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkContainer {
+  display: flex;
+  color: #1473e6;
+  cursor: pointer;
+}
