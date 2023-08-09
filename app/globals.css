@@ -7,6 +7,8 @@
   --green: #1dc37e;
   --green-light: #c8f8e4;
   --gray-light: #ebebeb;
+  --background-start: #f5f6f8;
+  --blue-light: #1473e6;
 }
 
 * {
@@ -18,7 +20,8 @@
 html,
 body {
   color: var(--black);
-  background: #f5f6f8;
+  background: var(--background-start);
+  font-family: var(--font-noto);
 }
 
 a {

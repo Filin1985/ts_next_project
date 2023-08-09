@@ -9,7 +9,7 @@ import styles from './Card.module.css';
 
 export const Card = ({title, tag, text}: CardProps): JSX.Element => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.imageContainer}>
         <Image className={styles.img} src={screenPicture} alt='Picture' />
       </div>
@@ -35,6 +35,6 @@ export const Card = ({title, tag, text}: CardProps): JSX.Element => {
           <ArrowIcon />
         </div>
       </div>
-    </div>
+    </article>
   );
 };

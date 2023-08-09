@@ -3,6 +3,7 @@ import type {Metadata} from 'next';
 import {Noto_Sans_KR} from 'next/font/google';
 
 const noto = Noto_Sans_KR({
+  variable: '--font-noto',
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],
 });

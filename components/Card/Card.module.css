@@ -31,7 +31,7 @@
 }
 
 .title {
-  color: var(--c-black, #2c2c2c);
+  color: var(--black);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -65,6 +65,6 @@
 
 .linkContainer {
   display: flex;
-  color: #1473e6;
+  color: var(--blue-light);
   cursor: pointer;
 }
