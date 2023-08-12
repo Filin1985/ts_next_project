@@ -19,7 +19,7 @@ export const Card = ({title, tag, text}: CardProps): JSX.Element => {
             <Tag size='s'>{tag}</Tag>
             <p className={styles.tagTime}>1 месяц назад</p>
           </div>
-          <Like />
+          <Like cardId='1'/>
         </div>
         <div>
           <Htag className={styles.title} tag='h3'>
