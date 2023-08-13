@@ -14,10 +14,10 @@ export const Like = ({ itemId, likes, setLikes }: LikeProps): JSX.Element => {
     try {
       const res = await fetch(`${BASE_URL}/${itemId}`, {
         method: 'PATCH',
-        body: JSON.stringify(likes),
+        body: JSON.stringify({ likes }),
         headers: {
           'Content-Type': 'application/json',
-        }
+        },
       });
       return res.json();
     } catch (error) {
@@ -30,12 +30,11 @@ export const Like = ({ itemId, likes, setLikes }: LikeProps): JSX.Element => {
   }, [likes]);
 
   const handleLike = () => {
-    setIsLiked(!isLiked)
-    console.log(isLiked)
-    if(isLiked) {
-      setLikes(likes + 1)
+    setIsLiked(!isLiked);
+    if (!isLiked) {
+      setLikes(likes + 1);
     } else {
-      setLikes(likes - 1)
+      setLikes(likes - 1);
     }
   };
 
