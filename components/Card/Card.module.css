@@ -10,15 +10,10 @@
 }
 
 .img {
-  max-width: 300px;
-  max-height: 192px;
-}
-
-.imageContainer {
   max-width: 330px;
   max-height: 200px;
   background-color: #e5f4ff;
-  padding: 4px 15px 3.826px 15px;
+  padding: 4px 15px 4px 15px;
   display: flex;
   justify-content: center;
   border-radius: 5px;

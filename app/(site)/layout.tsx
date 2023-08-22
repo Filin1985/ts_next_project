@@ -6,7 +6,7 @@ import { Header } from './components/Header/Header';
 const noto = Open_Sans({
   variable: '--font-open',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang='en'>
+    <html lang="ru">
       <body className={noto.className}>
         <Header />
         {children}

@@ -8,11 +8,6 @@
   font-weight: 400;
 }
 
-.tagName {
-  display: flex;
-  align-items: center;
-}
-
 .filled {
   fill: var(--black)
 }
