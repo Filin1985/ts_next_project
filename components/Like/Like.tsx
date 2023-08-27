@@ -22,8 +22,9 @@ const changeLikeOnServer = async (itemId: string, likes: number) => {
   }
 };
 
-export const Like = ({ itemId, likes }: LikeProps): JSX.Element => {
+export const Like = ({ itemId }: LikeProps): JSX.Element => {
   const [isLiked, setIsLiked] = useState<boolean>(false);
+  const [likes, setLikes] = useState<number>(0);
 
   useEffect(() => {
     changeLikeOnServer(itemId, likes);
@@ -31,19 +32,19 @@ export const Like = ({ itemId, likes }: LikeProps): JSX.Element => {
 
   const handleLike = () => {
     setIsLiked((prevState) => !prevState);
+    isLiked
+      ? setLikes((prevLikesState) => prevLikesState - 1)
+      : setLikes((prevLikesState) => prevLikesState + 1);
   };
 
   return (
-    <div className={styles.tagLike}>
-      <span className={styles.likesAmount}>
-        {isLiked ? likes + 1 : isLiked}
-      </span>
-      <LikeIcon
-        className={cn({
-          [styles.filled]: isLiked,
-        })}
-        onClick={handleLike}
-      />
-    </div>
+    <button className={styles.tagLike} onClick={handleLike}>
+      <span className={styles.likesAmount}>{likes}</span>
+        <LikeIcon
+          className={cn({
+            [styles.filled]: isLiked,
+          })}
+        />
+    </button>
   );
 };
