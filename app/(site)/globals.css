@@ -1,5 +1,6 @@
 :root {
-  --black: #3b434e;
+  --black: #000;
+  --gray: #3b434e;
   --white: white;
   --primary: #7653fc;
   --primary-hover: #5437c5;
@@ -19,9 +20,11 @@
 
 html,
 body {
+  font-family: var(--font-open);
   color: var(--black);
   background: var(--background-start);
-  font-family: var(--font-noto);
+  width: 100%;
+  margin: 0 auto;
 }
 
 a {

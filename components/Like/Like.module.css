@@ -6,9 +6,10 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
+  border: none;
+  background-color: transparent;
 }
 
-.tagName {
-  display: flex;
-  align-items: center;
+.filled {
+  fill: var(--black)
 }
