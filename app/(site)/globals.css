@@ -1,0 +1,33 @@
+:root {
+  --black: #000;
+  --gray: #3b434e;
+  --white: white;
+  --primary: #7653fc;
+  --primary-hover: #5437c5;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
+  --gray-light: #ebebeb;
+  --background-start: #f5f6f8;
+  --blue-light: #1473e6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: var(--font-open);
+  color: var(--black);
+  background: var(--background-start);
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
